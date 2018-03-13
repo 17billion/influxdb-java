@@ -234,7 +234,7 @@ public class Point {
   /**
    * @return the tags
    */
-  Map<String, String> getTags() {
+  public Map<String, String> getTags() 
     return this.tags;
   }
 
@@ -254,6 +254,13 @@ public class Point {
     this.fields = fields;
   }
 
+  /**
+   * @return the fields
+   */
+  public Map<String, Object> getFields() {
+    return this.fields;
+  }
+  
   @Override
   public boolean equals(final Object o) {
     if (this == o) {
